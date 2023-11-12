@@ -1,0 +1,30 @@
+---
+if (Astro.request.method=== 'POST'){
+    try{
+        const data = await Astro.request.formData()
+        const msg = data.get('msg')
+        
+    }catch (error){
+        if(error instanceof Error){
+            console.error(error.message)
+        }
+    }
+}
+---
+<main slot="main">
+    <form method="POST">
+      <h2>Contact me!</h2>
+      <textarea
+      placeholder="Send me an email"
+      name="msg"
+      
+      ></textarea>
+      <button>Send</button>
+    </form>
+</main>
+<style>
+    form{
+       text-align: center;
+    }
+
+</style>
