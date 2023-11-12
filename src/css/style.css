@@ -9,3 +9,11 @@ a,
 li {
   color: rgb(190, 187, 182);
 }
+
+button {
+  background-color: rgb(190, 187, 182);
+  border: 0px;
+  font-size: large;
+  height: 30px;
+  width: 130px;
+}

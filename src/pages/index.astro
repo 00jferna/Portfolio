@@ -1,32 +1,42 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Info from "../components/Info.astro";
-import Summary from "../components/ProjectList.astro";
+import Experience from "../components/Experience.astro";
+import ProjectList from "../components/ProjectList.astro";
 import Footer from "../components/Footer.astro";
 import "../css/style.css";
 ---
 
 <Layout title="Jesse Fernandez">
   <main class="landing" id="page-wrapper">
-    <Info class="info_cont" />
-    <Summary class="sections_cont" />
-    <Footer />
+    <Info id="info_cont" />
+    <ProjectList id="projects_cont" />
+    <Experience id="experience_cont"/>
+    <Footer id="footer_cont"/>
   </main>
 </Layout>
 <style>
   .landing {
     display: grid;
     gap: 10px 20px;
-    grid-template-columns: 40% auto;
     grid-template-areas:
-      "info sections"
-      ". sections";
+    "info proj"
+    "exp proj"
+    "foot foot";
+    grid-template-columns: 40% auto;
+    grid-template-rows: 400px 400px 1fr;
   }
-  .info_cont {
+  #info_cont {
     grid-area: info;
   }
-  .sections_cont {
-    grid-area: sections;
+  #experience_cont{
+    grid-area: exp;
+  }
+  #projects_cont {
+    grid-area: proj;
+  }
+  #footer_cont{
+    grid-area: foot;
   }
   @media screen and (max-width: 960px){
     .landing{
