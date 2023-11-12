@@ -23,10 +23,9 @@ import "../css/style.css";
     gap: 10px 20px;
     grid-template-areas:
     "info proj"
-    "exp proj"
-    "foot foot";
+    "exp proj";
     grid-template-columns: 40% auto;
-    grid-template-rows: 400px 400px 1fr;
+    grid-template-rows: 400px 1fr;
   }
   #info_cont {
     grid-area: info;
@@ -43,6 +42,7 @@ import "../css/style.css";
   @media screen and (max-width: 960px){
     .landing{
       grid-template-columns: auto;
+      grid-template-rows: auto;
       grid-template-areas:
       "info"
       "sections";
