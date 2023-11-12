@@ -21,8 +21,8 @@
   },
   {
     "name": "Meetup Clone",
-    "desc": "",
-    "features": ["", "", ""],
+    "desc": "A functional Meetup clone built using Express.JS",
+    "features": [],
     "url": "https://my-meetup-clone-ygxj.onrender.com/"
   }
 ]
