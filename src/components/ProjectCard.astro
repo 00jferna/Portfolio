@@ -1,0 +1,36 @@
+---
+export interface Props {
+  project: Array<string>;
+}
+const { project } = Astro.props as Props;
+---
+
+<div class="project_card">
+  <h2>{project.name}</h2>
+  <p>{project.desc}</p>
+  <ul class="project_list_item">
+    {
+      project.features.map((item) => {
+        return <li>{item}</li>;
+      })
+    }
+  </ul>
+  <a href={project.url}>Link to Project</a>
+</div>
+<style>
+  .project_card {
+    background-color: rgb(73, 90, 85, 0.6);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+  }
+  .project_card:hover {
+  }
+  .project_list_item {
+    list-style: none;
+    padding: unset;
+  }
+  .project_list_item > li {
+    margin: 3px 0px;
+  }
+</style>

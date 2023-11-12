@@ -1,50 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Banner from "../components/Banner.astro";
-import '../css/main.css'
-import '../css/fontawesome-all.min.css'
+import Info from "../components/Info.astro";
+import Summary from "../components/ProjectList.astro";
+import Footer from "../components/Footer.astro";
+import "../css/style.css";
 ---
 
 <Layout title="Jesse Fernandez">
-  <main class='landing' id="page-wrapper">
-    <Banner />
-
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="#"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="#"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="#"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="#"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-    </ul>
+  <main class="landing" id="page-wrapper">
+    <Info class="info_cont" />
+    <Summary class="sections_cont" />
+    <Footer />
   </main>
 </Layout>
-
-<!-- <style>
-	.landing {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Portfolio/assets/images/pexels-kevin-ku-577585.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Portfolio/assets/images/pexels-kevin-ku-577585.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Portfolio/assets/images/pexels-kevin-ku-577585.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Portfolio/assets/images/pexels-kevin-ku-577585.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding-top: 0;
-	}
-</style> -->
+<style>
+  .landing {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: 40% auto;
+    grid-template-areas:
+      "info sections"
+      ". sections";
+  }
+  .info_cont {
+    grid-area: info;
+  }
+  .sections_cont {
+    grid-area: sections;
+  }
+  @media screen and (max-width: 960px){
+    .landing{
+      grid-template-columns: auto;
+      grid-template-areas:
+      "info"
+      "sections";
+    }
+    
+  }
+</style>

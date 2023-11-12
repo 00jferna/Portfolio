@@ -1,0 +1,53 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<footer id="footer">
+  <ul class="icons">
+    <li>
+      <a href="https://www.linkedin.com/in/jessejfernandez/"
+        ><Icon class="icon" pack="mdi" name="linkedin" /></a>
+    </li>
+    <li>
+      <a href="https://github.com/00jferna"
+        ><Icon class="icon" pack="jam" name="github" /></a>
+    </li>
+    <li>
+      <a href="https://wellfound.com/u/jesse-fernandez-3"
+        ><Icon class="icon" pack="fa-brands" name="angellist" /></a
+      >
+    </li>
+  </ul>
+  <ul class="copyright">
+    <li>&copy; Jesse Fernandez</li>
+    <li><a href="https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/">Photo by Kevin Ku</a></li>
+  </ul>
+</footer>
+
+<style>
+  #footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+  }
+  .icons {
+    margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 40px);
+  }
+  .copyright {
+    margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 140px);
+  }
+  .icons,
+  .copyright {
+    list-style: none;
+    padding: unset;
+  }
+  .icon {
+    height: 30px;
+  }
+</style>

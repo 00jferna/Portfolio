@@ -1,0 +1,22 @@
+---
+import Projectcard from "./ProjectCard.astro";
+import Projectjson from "../components/projects.json";
+---
+
+<section id="one" class="wrapper style1 special">
+  <ul class="projects_cont">
+    {
+      Projectjson.map((project) => {
+        return <Projectcard {project} />;
+      })
+    }
+  </ul>
+</section>
+<style>
+  .projects_cont {
+    list-style: none;
+    margin: 10px;
+    min-width: 550px;
+    padding: unset;
+  }
+</style>
