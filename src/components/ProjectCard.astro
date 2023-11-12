@@ -25,12 +25,15 @@ const { project } = Astro.props as Props;
     margin: 10px;
   }
   .project_card:hover {
+    background-color: rgb(73, 90, 85, 1);
+  }
+  .project_card>h2{
+    margin: 0px 0px 10px 0px;
   }
   .project_list_item {
-    list-style: none;
-    padding: unset;
+    list-style: "> ";
   }
   .project_list_item > li {
-    margin: 3px 0px;
+    margin: 8px 0px;
   }
 </style>
