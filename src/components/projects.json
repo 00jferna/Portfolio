@@ -1,0 +1,28 @@
+[
+  {
+    "name": "FPVSpottr",
+    "desc": "Website for FPV pilots to share flying spots and organize flying groups.",
+    "features": [
+      "Designed and implemented a PostgreSQL Schema and wrote RESTful API using SQLAlchemy, allowing users to create, read, update, and delete Spots and Groups",
+      "Integrated AWS cloud storage using Boto3 SDK, allowing users to upload images for their Spot, Groups, and Profiles",
+      "Designed a clean and functional Frontend using React, HTML and CSS, allowing users to easily navigate the website"
+    ],
+    "url": "https://fpv-spottr.onrender.com/"
+  },
+  {
+    "name": "SoundCloudClone",
+    "desc": "A functional clone of SoundCloud, allowing users to upload and playback audio, create playlists.",
+    "features": [
+      "Used React Context to create a persistent audio player, allowing users to play an audio file while navigating the website",
+      "Integrated AWS cloud storage using Boto3 SDK, allowing users to upload, update, and delete audio and image files",
+      "Improved Frontend design using React, HTML, and CSS, providing users a cohesive experience"
+    ],
+    "url": "https://soundcloudclone.onrender.com/"
+  },
+  {
+    "name": "Meetup Clone",
+    "desc": "",
+    "features": ["", "", ""],
+    "url": "https://my-meetup-clone-ygxj.onrender.com/"
+  }
+]
