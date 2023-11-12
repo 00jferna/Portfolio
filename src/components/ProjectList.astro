@@ -5,6 +5,7 @@ import Projectjson from "../components/projects.json";
 
 <section id="one" class="wrapper style1 special">
   <ul class="projects_cont">
+    <h2>Projects</h2>
     {
       Projectjson.map((project) => {
         return <Projectcard {project} />;
@@ -18,5 +19,10 @@ import Projectjson from "../components/projects.json";
     margin: 10px;
     min-width: 550px;
     padding: unset;
+  }
+  .projects_cont > h2 {
+    padding-left: 20px;
+    margin: 10px 0px 0px 0px ;
+    font-size: xx-large;
   }
 </style>
