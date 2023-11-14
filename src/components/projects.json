@@ -22,7 +22,9 @@
   {
     "name": "Meetup Clone",
     "desc": "A functional Meetup clone built using Express.JS",
-    "features": [],
+    "features": ["Designed and implemented a PostgreSQL Schema and wrote RESTful API using Sequelize, allowing users to create, read, update, and delete Events and Groups",
+    "Designed a clean and functional Frontend using React, HTML and CSS, allowing users to easily navigate the website"
+  ],
     "url": "https://my-meetup-clone-ygxj.onrender.com/"
   }
 ]
