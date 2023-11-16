@@ -9,11 +9,23 @@ a,
 li {
   color: rgb(190, 187, 182);
 }
-
 button {
   background-color: rgb(190, 187, 182);
   border: 0px;
   font-size: large;
   height: 30px;
   width: 130px;
+}
+@media screen and (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  li {
+    font-size: larger;
+  }
 }
