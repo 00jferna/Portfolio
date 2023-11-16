@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Info from "../components/Info.astro";
-import Experience from "../components/Experience.astro";
+import Summary from "../components/Summary.astro"
 import ProjectList from "../components/ProjectList.astro";
 import Footer from "../components/Footer.astro";
 
@@ -12,9 +12,8 @@ import "../css/style.css";
   <main class="landing" id="page-wrapper">
     <Info id="info_cont" />
     <ProjectList id="projects_cont" />
-    <!-- <Experience id="experience_cont"/> -->
+    <Summary id="summary_cont"/>
     <Footer id="footer_cont"/>
-    
   </main>
 </Layout>
 <style>
@@ -23,15 +22,15 @@ import "../css/style.css";
     gap: 10px 20px;
     grid-template-areas:
     "info proj"
-    "exp proj";
+    "sum proj";
     grid-template-columns: 40% auto;
-    grid-template-rows: 400px 1fr;
+    grid-template-rows: 200px 1fr;
   }
   #info_cont {
     grid-area: info;
   }
-  #experience_cont{
-    grid-area: exp;
+  #summary_cont{
+    grid-area: sum;
   }
   #projects_cont {
     grid-area: proj;
@@ -45,7 +44,11 @@ import "../css/style.css";
       grid-template-rows: auto;
       grid-template-areas:
       "info"
+      "sum"
       "sections";
+    }
+    #projects_cont{
+      height: 10vh;
     }
     
   }
