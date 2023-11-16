@@ -6,11 +6,13 @@ import { Icon } from "astro-icon";
   <ul class="icons">
     <li>
       <a href="https://www.linkedin.com/in/jessejfernandez/"
-        ><Icon class="icon" pack="mdi" name="linkedin" /></a>
+        ><Icon class="icon" pack="mdi" name="linkedin" /></a
+      >
     </li>
     <li>
       <a href="https://github.com/00jferna"
-        ><Icon class="icon" pack="jam" name="github" /></a>
+        ><Icon class="icon" pack="jam" name="github" /></a
+      >
     </li>
     <li>
       <a href="https://wellfound.com/u/jesse-fernandez-3"
@@ -20,8 +22,16 @@ import { Icon } from "astro-icon";
   </ul>
   <ul class="copyright">
     <li>&copy; Jesse Fernandez</li>
-    <li><a href="https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/">Photo by Kevin Ku</a></li>
+    <li>
+      <a
+        href="https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/"
+        >Photo by Kevin Ku</a>
+    </li>
   </ul>
+  <p>
+    This Portfolio was hand coded, by me, using the <a
+      href="https://astro.build/">Astro Framework</a>
+  </p>
 </footer>
 
 <style>
@@ -49,5 +59,8 @@ import { Icon } from "astro-icon";
   }
   .icon {
     height: 30px;
+  }
+  #footer p {
+    text-align: center;
   }
 </style>
