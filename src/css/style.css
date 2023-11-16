@@ -4,10 +4,18 @@ h3,
 h4,
 h5,
 h6,
-p,
 a,
+p,
 li {
   color: rgb(190, 187, 182);
+}
+a {
+  color: #2ea8b1;
+  font-weight: bold;
+}
+a:hover {
+  color: #7076e7;
+  
 }
 button {
   background-color: rgb(190, 187, 182);
