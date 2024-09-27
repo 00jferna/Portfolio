@@ -10,14 +10,14 @@
     "url": "https://fpv-spottr.onrender.com/"
   },
   {
-    "name": "SoundCloudClone",
+    "name": "NostalJams",
     "desc": "A functional clone of SoundCloud, allowing users to upload and playback audio, create playlists.",
     "features": [
       "Used React Context to create a persistent audio player, allowing users to play an audio file while navigating the website",
       "Integrated AWS cloud storage using Boto3 SDK, allowing users to upload, update, and delete audio and image files",
       "Improved Frontend design using React, HTML, and CSS, providing users a cohesive experience"
     ],
-    "url": "https://soundcloudclone.onrender.com/"
+    "url": "https://nostaljams-307i.onrender.com/"
   },
   {
     "name": "Meetup Clone",
